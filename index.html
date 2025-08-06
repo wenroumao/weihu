@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="https://s2.loli.net/2023/01/19/3WAgq6w8azPduQr.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>网站维护倒计时</title>
+</head>
+
+<body>
+    <!-- 使用一个容器来包裹video元素 -->
+    <div id="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="https://files.codelife.cc/itab/defaultWallpaper/videos/39.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1>野似o温柔猫</h1>
+            <h2>维护倒计时</h2>
+        </header>
+
+        <section class="timer">
+            <div class="timer__item">
+                <div class="timer__data" id="timerResultDays"></div>
+                <div class="timer__type">天</div>
+            </div>:
+            <div class="timer__item">
+                <div class="timer__data" id="timerResultHours"></div>
+                <div class="timer__type">小时</div>
+            </div>:
+            <div class="timer__item">
+                <div class="timer__data" id="timerResultMinutes"></div>
+                <div class="timer__type">分钟</div>
+            </div>:
+            <div class="timer__item">
+                <div class="timer__data" id="timerResultSeconds"></div>
+                <div class="timer__type">秒</div>
+            </div>
+        </section>
+
+        <!--START_SOCIAL_LINKS_BLOCK-->
+        <section class="social-links">
+            <!-- ... 社交链接部分的代码 ... -->
+        </section>
+        <!--END_SOCIAL_LINKS_BLOCK-->
+    </div>
+
+    <footer class="footer">
+        <div class="footer__content">
+            温柔猫
+        </div>
+    </footer>
+
+    <!-- 引入 JavaScript 文件 -->
+    <script src="js/timer.js"></script>
+    <audio id="myAudio" controls autoplay loop>
+        <!-- 提供多个音频源，以便浏览器选择支持的格式 -->
+        <source src="music/王艳薇-离开我的依赖.mp3" type="audio/mp3">
+        <source src="" type="audio/ogg">
+        你的浏览器暂不支持
+    </audio>
+
+    <script>
+        // 在页面加载完毕后，自动播放音频
+        window.addEventListener("load", function () {
+            // 添加交互事件，例如点击页面
+            document.body.addEventListener("click", function playAudio() {
+                // 尝试播放音频
+                audio.play().then(() => {
+                    // 播放成功
+                    console.log("音频已自动播放");
+                    // 移除交互事件，以免重复触发
+                    document.body.removeEventListener("click", playAudio);
+                }).catch((error) => {
+                    // 播放失败，可能由于浏览器政策限制
+                    console.error("音频自动播放失败:", error);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
