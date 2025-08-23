@@ -31,9 +31,6 @@ function displayTimerValues(diff) {
         }
     });
 }
-
-<<<<<<< HEAD
-=======
 function heartbeatSync() {
     const h1 = document.querySelector('.heartbeat');
     if (h1) {
@@ -43,17 +40,13 @@ function heartbeatSync() {
     }
 }
 
->>>>>>> 66c4caa (更新了主页文字发光)
 function startTimer(targetEndTime) {
     function update() {
         const now = Math.floor(Date.now() / 1000);
         let diff = Math.max(0, targetEndTime - now);
         displayTimerValues(diff);
-<<<<<<< HEAD
 
-=======
         heartbeatSync();
->>>>>>> 66c4caa (更新了主页文字发光)
         if (diff === 0) {
             clearInterval(timerInterval);
             showEndEffect();
@@ -73,8 +66,4 @@ function showEndEffect() {
 
 // 设置结束时间
 const targetEndTime = new Date("2025-10-01T00:00:00").getTime() / 1000;
-<<<<<<< HEAD
 startTimer(targetEndTime);
-=======
-startTimer(targetEndTime);
->>>>>>> 66c4caa (更新了主页文字发光)
