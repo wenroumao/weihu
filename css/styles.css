@@ -1,4 +1,8 @@
 /* styles.css */
+<<<<<<< HEAD
+=======
+/* 基础元素统一样式，去除默认边距和填充，设置字体继承及垂直对齐 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 a,
 body,
 div,
@@ -17,6 +21,10 @@ span {
     vertical-align: baseline;
 }
 
+<<<<<<< HEAD
+=======
+/* 语义化标签设置为块级显示，便于布局 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 article,
 aside,
 footer,
@@ -26,6 +34,10 @@ section {
     display: block;
 }
 
+<<<<<<< HEAD
+=======
+/* 设置页面和 body 高度为 100%，保证背景铺满 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 html,
 body {
     height: 100%;
@@ -33,10 +45,18 @@ body {
 
 }
 
+<<<<<<< HEAD
+=======
+/* 设置 html 的基础字体大小为 62.5%，方便 rem 计算 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 html {
     font-size: 62.5%;
 }
 
+<<<<<<< HEAD
+=======
+/* 设置 body 的字体、颜色、布局方式及溢出隐藏 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 body {
     font-family: "楷体", "San Francisco", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 30px;
@@ -56,6 +76,10 @@ body {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
+=======
+/* 视频容器固定定位，作为背景层 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 #video-container {
     position: fixed;
     top: 0;
@@ -65,12 +89,20 @@ body {
     z-index: -1;
 }
 
+<<<<<<< HEAD
+=======
+/* 视频元素铺满容器并保持比例 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+<<<<<<< HEAD
+=======
+/* body 添加半透明黑色遮罩，提升内容可读性 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 body:after {
     content: "";
     position: fixed;
@@ -82,20 +114,38 @@ body:after {
     z-index: -1;
 }
 
+<<<<<<< HEAD
 h1,
 h2 {
 
     margin: 16px 0;
 }
 
+=======
+/* 标题样式及间距设置 */
+h1,
+h2 {
+    margin: 16px 0;
+}
+
+/* h1 标题字体大小 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 h1 {
     font-size: 24px;
 }
 
+<<<<<<< HEAD
+=======
+/* h2 标题颜色设置为半透明白色 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 h2 {
     color: rgba(255, 255, 255, .85);
 }
 
+<<<<<<< HEAD
+=======
+/* 主内容容器布局及最大宽度 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -109,10 +159,18 @@ h2 {
     padding: 0 20px;
 }
 
+<<<<<<< HEAD
+=======
+/* 页头样式 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .header {
     margin: auto 0 16px;
 }
 
+<<<<<<< HEAD
+=======
+/* 计时器样式及字体设置 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .timer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -122,6 +180,10 @@ h2 {
     line-height: 1;
 }
 
+<<<<<<< HEAD
+=======
+/* 计时器类型说明样式 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .timer__type {
     margin-top: 10px;
     font-size: 14px;
@@ -129,6 +191,10 @@ h2 {
     color: rgba(255, 255, 255, .5);
 }
 
+<<<<<<< HEAD
+=======
+/* 社交链接容器布局 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .social-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -136,10 +202,18 @@ h2 {
     margin: auto 0 50px;
 }
 
+<<<<<<< HEAD
+=======
+/* 单个社交链接间距 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .social-links__link {
     margin: 50px 24px 0 0;
 }
 
+<<<<<<< HEAD
+=======
+/* 图标样式及透明度 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .icon {
     display: block;
     width: 32px;
@@ -147,21 +221,37 @@ h2 {
     opacity: .7;
 }
 
+<<<<<<< HEAD
+=======
+/* 鼠标悬停时图标完全显示 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .social-links__link:hover .icon {
     opacity: 1;
 }
 
+<<<<<<< HEAD
+=======
+/* 图标图片铺满容器 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .icon>img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
+<<<<<<< HEAD
+=======
+/* 页脚样式及背景 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .footer {
     width: 100%;
     background: rgba(0, 0, 0, .5);
 }
 
+<<<<<<< HEAD
+=======
+/* 页脚内容布局及颜色 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .footer__content {
     margin: auto;
     padding: 0 40px;
@@ -170,8 +260,16 @@ h2 {
     color: rgba(255, 255, 255, .5);
 }
 
+<<<<<<< HEAD
+=======
+/* 页脚 logo 样式 */
+>>>>>>> 66c4caa (更新了主页文字发光)
 .footer .logo {
     height: 50px;
     vertical-align: middle;
     margin: 0 0 0 10px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 66c4caa (更新了主页文字发光)
